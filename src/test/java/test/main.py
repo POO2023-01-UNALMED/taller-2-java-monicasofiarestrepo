@@ -9,12 +9,12 @@ class Auto:
         self.registro = registro
         self.precio= precio
         
-        def CantidadAsientos(self):
+        def cantidadAsientos(self):
             numeroAsientos = 0
             for asiento in self.asientos: 
                 if isinstance(asiento, asientos): #isinstance(object, type) returns a boolean when the object is in the type
                     numeroAsientos += 1
-            return (CantidadAsientos)
+            return (cantidadAsientos)
         
         def VerificarIdentidad(self): 
             if self.motor.registro != self.registro: 
@@ -25,7 +25,7 @@ class Auto:
                 return "Auto Original"
             return(VerificarIdentidad)
 
-class Asiento: 
+class asiento: 
     def _init_ (self, color, precio, registro):
         self.color = color
         self.precio = precio
@@ -37,7 +37,7 @@ class Asiento:
                 self.color = color
             return(CambiarColor)
 
-class Motor: 
+class motor: 
     def _init_(self,numeroCilinros, tipo, registro):
         self.numeroCilindros = numeroCilinros
         self.tipo = tipo
